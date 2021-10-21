@@ -15,5 +15,4 @@ jobs:
         with:
           api-level: 29
           script: |
-            bash -c pwd
-            bash -c tree
+            emulator -list-avds
