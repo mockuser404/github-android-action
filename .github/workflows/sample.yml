@@ -1,3 +1,5 @@
+name: Sample
+
 jobs:
   test:
     runs-on: macos-latest
