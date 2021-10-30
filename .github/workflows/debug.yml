@@ -22,5 +22,5 @@ jobs:
       - name: Check connection health
         run: |
           npm install --global speed-test fast-cli
-          fast
-          speed-test
+          fast --single-line
+          speed-test -j
