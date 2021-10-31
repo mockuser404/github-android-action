@@ -6,7 +6,7 @@ jobs:
   debug:
     strategy:
       matrix:
-        os: [macos-11, macos-10.5]
+        os: [macos-11, macos-10.15]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Run a one-line script
