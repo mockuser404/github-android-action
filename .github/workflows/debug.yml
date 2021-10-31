@@ -4,7 +4,10 @@ on:
 
 jobs:
   debug:
-    runs-on: macos-latest
+    strategy:
+      matrix:
+        os: [macos-11, macos-10.5]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
