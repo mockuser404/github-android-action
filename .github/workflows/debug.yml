@@ -24,3 +24,8 @@ jobs:
           npm install --global speed-test fast-cli
           fast --single-line
           speed-test -j
+      - name: Disk info
+        run: |
+          df -h
+          pwd
+          du -sh
