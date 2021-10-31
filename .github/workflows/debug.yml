@@ -32,3 +32,9 @@ jobs:
           df -h
           pwd
           du -sh
+      - name: Test storage limit
+        run: |
+          dd if=/dev/urandom of=temp_14GB_file bs=1 count=0 seek=14g
+          ls -l
+          ls -lh
+          df -h
