@@ -16,3 +16,7 @@ jobs:
           api-level: 29
           script: |
             emulator -list-avds
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
+      - name: Next step
+        run: echo bye!
